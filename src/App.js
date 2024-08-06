@@ -1,7 +1,9 @@
 import BookingFerry from "./components/booking-ferry/BookingFerry";
 import SelectDropdown from "./components/dropdown/dropdown";
+import Faq from "./components/faq/Faq";
 import PopularCards from "./components/popular-cards/PopularCards";
 import ThemeButton from "./components/theme-button/ThemeButton";
+import UpcomingFerry from "./components/upcoming-ferry/UpcomingFerry";
 import WhyChooseCards from "./components/why-choose-cards/WhyChooseCard";
 import logo from "./logo.svg";
 // import "./App.css";
@@ -17,14 +19,14 @@ function App() {
             className="w-full h-auto opacity-40"
           />
           <div className="absolute top-12 w-full">
-            <h2 className="text-7xl font-semibold text-white leading-tight ml-12">
+            <h2 className="xl:text-7xl text-4xl font-semibold text-white leading-tight ml-12">
               Enjoy Your Dream Vacations <br /> with TheAndamans.in
             </h2>
             <p className="text-2xl text-white mt-6 leading-tight ml-12">
               Book Ferry trips, Scuba Diving, One Day Trips <br /> and much more
             </p>
             {/* upper tab section */}
-            <div className="max-w-[650px] m-auto w-full grid grid-cols-3 text-center mt-36">
+            <div className="max-w-[650px] m-auto w-full grid grid-cols-3 text-center xl:mt-36 mt-12">
               <div className="bg-white py-2 rounded-tl-3xl cursor-pointer bg-opacity-90">
                 <img src="/svg/ship.svg" alt="icon" className="m-auto mb-2" />
                 <span className="font-semibold">Ferry Booking</span>
@@ -40,7 +42,7 @@ function App() {
             </div>
             {/* upper tab section end */}
             {/* lower details section start */}
-            <div className="max-w-[1024px] m-auto w-full grid grid-cols-4 bg-white py-10 px-6 rounded-[30px] shadow-button-shadow bg-opacity-90">
+            <div className="max-w-[880px] m-auto w-full grid grid-cols-4 bg-white py-10 px-6 rounded-[30px] shadow-button-shadow bg-opacity-90">
               <div className="border-r-2 py-6 pr-4">
                 <SelectDropdown
                   parentClassName="grid gap-6"
@@ -195,39 +197,68 @@ function App() {
 
           <div className="grid grid-cols-2 gap-8 justify-between items-center sm:px-8 px-4 mt-12">
             <div>
-              <h3 className="text-[#0A1951] font-semibold mb-6">Average Ferries on  routes on daily basis</h3>
-            <div className="grid grid-cols-2 gap-8">
-              {ferryArray?.map((item,index)=>{
-                return(
-                  <div key={index} className={`cursor-pointer shadow-custom-shadow2 rounded-xl py-6 px-8 ${index===0 ? "bg-[#0A1951] text-white" : "bg-white"}`}>
-                    <div className="flex gap-4 items-center">
-                      <div className={`border rounded-full p-2 ${index===0 ? "bg-white" : "bg-[#0A1951]"}`}>
-                        <img src={item?.imageUrl} alt="ferry" className="!w-[36px] !h-[33px]" />
+              <h3 className="text-[#0A1951] font-semibold mb-6">
+                Average Ferries on routes on daily basis
+              </h3>
+              <div className="grid grid-cols-2 gap-8">
+                {ferryArray?.map((item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className={`cursor-pointer shadow-custom-shadow2 rounded-xl py-6 px-8 ${
+                        index === 0 ? "bg-[#0A1951] text-white" : "bg-white"
+                      }`}
+                    >
+                      <div className="flex gap-4 items-center">
+                        <div
+                          className={`border rounded-full p-2 flex-none ${
+                            index === 0 ? "bg-white" : "bg-[#0A1951]"
+                          }`}
+                        >
+                          <img
+                            src={item?.imageUrl}
+                            alt="ferry"
+                            className="!w-[36px] !h-[33px]"
+                          />
+                        </div>
+                        <p className="text-[#8890B1] text-xl">{item?.name}</p>
                       </div>
-                      <p className="text-[#8890B1] text-xl">{item?.name}</p>
+                      <h3 className="text-2xl font-semibold mt-4">
+                        {item?.ferryCount} Ferries
+                      </h3>
                     </div>
-                    <h3 className="text-2xl font-semibold mt-4">{item?.ferryCount} Ferries</h3>
-                  </div>
-                )
-              })}
-            </div>
+                  );
+                })}
+              </div>
             </div>
 
             <div className="flex justify-end">
-              <img src="/jpg/route.jpg" alt="route" className="max-w-[500px]" />
+              <img src="/jpg/route.jpg" alt="route" className="max-w-[500px] w-full" />
             </div>
           </div>
           <div className="grid justify-center mt-12">
-          <ThemeButton text="Book Ferry" />
+            <ThemeButton text="Book Ferry" />
           </div>
         </div>
         {/* ferry routes end */}
 
         {/* upcoming ferry trips section start */}
-              <div>
-                <h2 className="text-4xl font-bold text-center leading-tight text-[#0A1951]">Our Upcoming Ferry Trips</h2>
-              </div>
+        <div>
+          <h2 className="text-4xl font-bold text-center leading-tight text-[#0A1951]">
+            Our Upcoming Ferry Trips
+          </h2>
+          <div className="mt-8">
+          <UpcomingFerry />
+          </div>
+        </div>
         {/* upcoming ferry trips section end */}
+        {/* faq section */}
+        <div className="my-12">
+          <h2 className="text-4xl font-bold text-center leading-tight text-[#0A1951]">Frequently Asked Questions</h2>
+          <div className="mt-8">
+            <Faq />
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -296,23 +327,23 @@ const popularArray = [
 ];
 const ferryArray = [
   {
-    imageUrl:"/svg/ferry1.svg",
-    name:"Havelock to Port Blair",
-    ferryCount:12
+    imageUrl: "/svg/ferry1.svg",
+    name: "Havelock to Port Blair",
+    ferryCount: 12,
   },
   {
-    imageUrl:"/svg/ferry2.svg",
-    name:"Havelock to Port Blair",
-    ferryCount:12
+    imageUrl: "/svg/ferry2.svg",
+    name: "Havelock to Port Blair",
+    ferryCount: 12,
   },
   {
-    imageUrl:"/svg/ferry2.svg",
-    name:"Havelock to Port Blair",
-    ferryCount:12
+    imageUrl: "/svg/ferry2.svg",
+    name: "Havelock to Port Blair",
+    ferryCount: 12,
   },
   {
-    imageUrl:"/svg/ferry3.svg",
-    name:"Havelock to Port Blair",
-    ferryCount:12
+    imageUrl: "/svg/ferry3.svg",
+    name: "Havelock to Port Blair",
+    ferryCount: 12,
   },
-]
+];
