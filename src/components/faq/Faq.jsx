@@ -23,7 +23,7 @@ const Faq = () => {
               onClick={() => toggleFaq(item?.que)}
             >
               <div className="flex gap-2">
-                <span className={`block w-[20px] h-[20px] bg-black rounded-full flex-none mt-[3px] ${showAns===item?.que ? "bg-[#0A1951]" : "bg-[#D1DCF8]"}`}></span>
+                <span className={`block w-[20px] h-[20px] rounded-full flex-none mt-[3px] ${showAns===item?.que ? "bg-[#0A1951]" : "bg-[#D1DCF8]"}`}></span>
                 <p>{item?.que}</p>
               </div>
               <div className="flex-none">
