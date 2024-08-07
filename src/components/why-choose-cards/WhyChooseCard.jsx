@@ -3,7 +3,7 @@ import ThemeButton from "../theme-button/ThemeButton"
 const WhyChooseCards = () =>{
     return(
       <>
-        <div className="grid grid-cols-3 gap-8">  
+        <div className="grid sm:grid-cols-3 gap-8">  
             {whyChoose?.map((item,index)=>{
                 return(
                     <div key={index} className=" max-w-[450px] w-full p-12 shadow-custom-shadow2 cursor-pointer rounded-2xl">

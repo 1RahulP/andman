@@ -11,39 +11,39 @@ import logo from "./logo.svg";
 function App() {
   return (
     <div className="max-w-[1450px] m-auto">
-      <div className="px-8 py-8">
-        <div className="bg-[url('/public/png/banner.png')] bg-contain relative">
+      <div className="sm:px-8 sm:py-8">
+        <div className="bg-[url('/public/png/banner.png')] bg-contain relative sm:h-auto h-[600px] bg-cover">
           <img
             src="/png/bannerbg.png"
             alt="banner"
-            className="w-full h-auto opacity-40"
+            className="w-full sm:h-auto h-full opacity-40"
           />
-          <div className="absolute top-12 w-full">
-            <h2 className="xl:text-7xl text-4xl font-semibold text-white leading-tight ml-12">
+          <div className="absolute sm:top-12 top-0 w-full sm:px-0 sm:py-0 px-4">
+            <h2 className="xl:text-7xl sm:block hidden text-4xl font-semibold text-white leading-tight ml-12">
               Enjoy Your Dream Vacations <br /> with TheAndamans.in
             </h2>
-            <p className="text-2xl text-white mt-6 leading-tight ml-12">
+            <p className="text-2xl sm:block hidden text-white mt-6 leading-tight ml-12">
               Book Ferry trips, Scuba Diving, One Day Trips <br /> and much more
             </p>
             {/* upper tab section */}
-            <div className="max-w-[650px] m-auto w-full grid grid-cols-3 text-center xl:mt-36 mt-12">
+            <div className="max-w-[650px] m-auto w-full grid grid-cols-3 text-center xl:mt-36 mt-12 sm:px-0 px-[25px]">
               <div className="bg-white py-2 rounded-tl-3xl cursor-pointer bg-opacity-90">
-                <img src="/svg/ship.svg" alt="icon" className="m-auto mb-2" />
-                <span className="font-semibold">Ferry Booking</span>
+                <img src="/svg/ship.svg" alt="icon" className="m-auto sm:mb-2 sm:w-auto w-[24px]" />
+                <span className="font-semibold sm:text-[15px] text-xs">Ferry Booking</span>
               </div>
               <div className="bg-black bg-opacity-[50%] py-2 text-white cursor-pointer">
-                <img src="/svg/scuba.svg" alt="icon" className="m-auto mb-2" />
-                <span className="font-semibold">Scuba Diving</span>
+                <img src="/svg/scuba.svg" alt="icon" className="m-auto sm:mb-2 sm:w-auto w-[24px]" />
+                <span className="font-semibold sm:text-[15px] text-xs">Scuba Diving</span>
               </div>
               <div className="bg-black bg-opacity-[50%] py-2 text-white rounded-tr-3xl cursor-pointer">
-                <img src="/svg/trip.svg" alt="icon" className="m-auto mb-2" />
-                <span className="font-semibold">Hotel</span>
+                <img src="/svg/trip.svg" alt="icon" className="m-auto sm:mb-2 sm:w-auto w-[24px]" />
+                <span className="font-semibold sm:text-[15px] text-xs">Hotel</span>
               </div>
             </div>
             {/* upper tab section end */}
             {/* lower details section start */}
-            <div className="max-w-[880px] m-auto w-full grid grid-cols-4 bg-white py-10 px-6 rounded-[30px] shadow-button-shadow bg-opacity-90">
-              <div className="border-r-2 py-6 pr-4">
+            <div className="max-w-[880px] m-auto w-full grid sm:grid-cols-4 sm:gap-0 gap-3 bg-white py-10 px-6 rounded-[30px] shadow-button-shadow bg-opacity-90">
+              <div className="sm:border-r-2 sm:py-6 py-2 ">
                 <SelectDropdown
                   parentClassName="grid gap-6"
                   label="From"
@@ -51,8 +51,9 @@ function App() {
                   listArray={fromlocationArray}
                 />
               </div>
-              <div className="border-r-2 py-6 px-4">
+              <div className="sm:border-r-2 sm:py-6 py-2 sm:px-4 ">
                 <SelectDropdown
+                
                   selectClassName="bg-opacity-90"
                   parentClassName="grid gap-6"
                   label="To"
@@ -60,45 +61,49 @@ function App() {
                   listArray={tolocationArray}
                 />
               </div>
-              <div className="border-r-2 py-6 px-4 grid gap-6">
+              <div className="sm:border-r-2 sm:py-6 py-2 sm:px-4  grid gap-6">
                 <label
-                  className="block text-[#0A1951] font-semibold"
+                  className="block text-[#0A1951] font-semibold sm:block hidden"
                   id="departure"
                 >
                   Departure
                 </label>
                 <input
-                  className="outline-none bg-transparent"
+                placeholder="Departure"
+                  className="outline-none sm:bg-transparent bg-white sm:px-0 sm:py-0 px-2 py-4 rounded-xl"
                   type="date"
                   name="Departure"
                   id="departure"
                 />
               </div>
-              <div className="py-6 px-4 grid gap-6">
+              <div className="sm:py-6 py-2 sm:px-4 grid gap-6">
                 <label
-                  className="block text-[#0A1951] font-semibold"
+                  className="block text-[#0A1951] font-semibold sm:block hidden"
                   id="passangers"
                 >
                   Passangers
                 </label>
                 <input
-                  className="outline-none bg-transparent"
+                  className="outline-none sm:bg-transparent bg-white sm:px-0 sm:py-0 px-2 py-4 rounded-xl"
                   type="number"
                   name="passangers"
                   id="passangers"
                   value={"2"}
                 />
               </div>
+              <div>
+                <ThemeButton text="Search" className="w-full" />
+              </div>
             </div>
             {/* lower details section end */}
           </div>
         </div>
         {/* popular destination section start */}
-        <div className="mt-36 px-8">
-          <h2 className="text-4xl font-bold text-center text-[#0A1951]">
+        <div className="sm:mt-36 mt-10 sm:px-8 px-4">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center text-[#0A1951]">
             Popular Destinations
           </h2>
-          <div className="grid grid-cols-3 gap-12 my-12">
+          <div className="sm:grid flex overflow-x-auto sm:overflow-x-unset grid-cols-3 sm:gap-12 gap-4 sm:my-12 my-4 sm:pb-0 pb-8">
             {popularArray?.map((item, index) => {
               return (
                 <PopularCards
@@ -195,12 +200,12 @@ function App() {
             also host five indigenous tribes.
           </p>
 
-          <div className="grid grid-cols-2 gap-8 justify-between items-center sm:px-8 px-4 mt-12">
+          <div className="grid sm:grid-cols-2 gap-8 justify-between items-center sm:px-8 px-4 mt-12">
             <div>
               <h3 className="text-[#0A1951] font-semibold mb-6">
                 Average Ferries on routes on daily basis
               </h3>
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid sm:grid-cols-2 gap-8">
                 {ferryArray?.map((item, index) => {
                   return (
                     <div
@@ -267,7 +272,7 @@ function App() {
 export default App;
 const fromlocationArray = [
   {
-    list: "Select location",
+    list: "From",
   },
   {
     list: "Port Blair",
@@ -287,7 +292,7 @@ const fromlocationArray = [
 ];
 const tolocationArray = [
   {
-    list: "Select location",
+    list: "To",
   },
   {
     list: "Havelock Island",
