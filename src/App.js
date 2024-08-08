@@ -119,66 +119,66 @@ function App() {
         </div>
         {/* popular destination section end */}
         <div className="my-20 px-8">
-          <h2 className="text-4xl font-bold text-center leading-tight text-[#0A1951]">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center leading-tight text-[#0A1951]">
             Get All Your High-Speed Ferry <br />
             Needs Covered at Our Andaman Hub
           </h2>
-          <div className="flex justify-between items-center gp-4 my-12">
+          <div className="sm:flex sm:justify-between sm:items-center grid gap-4 my-12">
             <div className="shadow-custom-shadow2 h-[160px] grid px-4">
               <img
                 src="/svg/brand01.svg"
                 alt="brand"
-                className="m-auto w-[80%]"
+                className="m-auto sm:w-[80%]"
               />
             </div>
             <div className="h-[160px] grid px-4">
               <img
                 src="/svg/brand02.svg"
                 alt="brand"
-                className="m-auto w-[80%]"
+                className="m-auto sm:w-[80%]"
               />
             </div>
             <div className="h-[160px] grid px-4">
               <img
                 src="/svg/brand03.svg"
                 alt="brand"
-                className="m-auto w-[80%]"
+                className="m-auto sm:w-[80%]"
               />
             </div>
             <div className="h-[160px] grid px-4">
               <img
                 src="/svg/brand04.svg"
                 alt="brand"
-                className="m-auto w-[80%]"
+                className="m-auto sm:w-[80%]"
               />
             </div>
             <div className="h-[160px] grid px-4">
               <img
                 src="/svg/brand05.svg"
                 alt="brand"
-                className="m-auto w-[80%]"
+                className="m-auto sm:w-[80%]"
               />
             </div>
             <div className="h-[160px] grid px-4">
               <img
                 src="/svg/brand06.svg"
                 alt="brand"
-                className="m-auto w-[80%]"
+                className="m-auto sm:w-[80%]"
               />
             </div>
           </div>
         </div>
         {/* booking ferry section start */}
         <div className="my-20 px-8">
-          <h2 className="text-4xl font-bold text-center leading-tight text-[#0A1951]">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center leading-tight text-[#0A1951]">
             Booking Ferry is now Easier
           </h2>
           <BookingFerry />
         </div>
         {/* booking ferry section end */}
         {/* why choose section start */}
-        <div>
-          <h2 className="text-4xl font-bold text-center leading-tight text-[#0A1951]">
+        <div className="sm:px-0 px-4">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center leading-tight text-[#0A1951]">
             Why Choose TheAndamans.in
           </h2>
           <div className="mt-8">
@@ -187,8 +187,8 @@ function App() {
         </div>
         {/* why choose section end */}
         {/* ferry routes start */}
-        <div className="my-16 max-w-[1250px] w-full m-auto">
-          <h2 className="text-4xl font-bold text-center leading-tight text-[#0A1951]">
+        <div className="sm:my-16 my-8 max-w-[1250px] w-full m-auto">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center leading-tight text-[#0A1951]">
             Ferry Routes in Andaman
           </h2>
           <p className="text-[#8890B1] sm:px-8 px-4 mt-8 text-center">
@@ -228,7 +228,7 @@ function App() {
                         </div>
                         <p className="text-[#8890B1] text-xl">{item?.name}</p>
                       </div>
-                      <h3 className="text-2xl font-semibold mt-4">
+                      <h3 className="text-2xl font-semibold mt-4 sm:text-left text-center">
                         {item?.ferryCount} Ferries
                       </h3>
                     </div>
@@ -249,7 +249,7 @@ function App() {
 
         {/* upcoming ferry trips section start */}
         <div>
-          <h2 className="text-4xl font-bold text-center leading-tight text-[#0A1951]">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center leading-tight text-[#0A1951]">
             Our Upcoming Ferry Trips
           </h2>
           <div className="mt-8">
@@ -258,8 +258,8 @@ function App() {
         </div>
         {/* upcoming ferry trips section end */}
         {/* faq section */}
-        <div className="my-12">
-          <h2 className="text-4xl font-bold text-center leading-tight text-[#0A1951]">Frequently Asked Questions</h2>
+        <div className="my-12 sm:px-0 px-4">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center leading-tight text-[#0A1951]">Frequently Asked Questions</h2>
           <div className="mt-8">
             <Faq />
           </div>
