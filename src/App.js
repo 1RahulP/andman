@@ -70,7 +70,7 @@ function App() {
                 </label>
                 <input
                 placeholder="Departure"
-                  className="outline-none sm:bg-transparent bg-white sm:px-0 sm:py-0 px-2 py-4 rounded-xl"
+                  className="outline-none sm:bg-transparent bg-white sm:px-0 sm:py-0 px-2 py-4 rounded-xl w-full"
                   type="date"
                   name="Departure"
                   id="departure"
@@ -91,7 +91,7 @@ function App() {
                   value={"2"}
                 />
               </div>
-              <div>
+              <div className="sm:hidden block">
                 <ThemeButton text="Search" className="w-full" />
               </div>
             </div>
@@ -124,42 +124,42 @@ function App() {
             Needs Covered at Our Andaman Hub
           </h2>
           <div className="sm:flex sm:justify-between sm:items-center grid gap-4 my-12">
-            <div className="shadow-custom-shadow2 h-[160px] grid px-4">
+            <div className="shadow-card-shadow h-[160px] grid px-4">
               <img
                 src="/svg/brand01.svg"
                 alt="brand"
                 className="m-auto sm:w-[80%]"
               />
             </div>
-            <div className="h-[160px] grid px-4">
+            <div className="h-[160px] grid px-4 shadow-card-shadow">
               <img
                 src="/svg/brand02.svg"
                 alt="brand"
                 className="m-auto sm:w-[80%]"
               />
             </div>
-            <div className="h-[160px] grid px-4">
+            <div className="h-[160px] grid px-4 shadow-card-shadow">
               <img
                 src="/svg/brand03.svg"
                 alt="brand"
                 className="m-auto sm:w-[80%]"
               />
             </div>
-            <div className="h-[160px] grid px-4">
+            <div className="h-[160px] grid px-4 shadow-card-shadow">
               <img
                 src="/svg/brand04.svg"
                 alt="brand"
                 className="m-auto sm:w-[80%]"
               />
             </div>
-            <div className="h-[160px] grid px-4">
+            <div className="h-[160px] grid px-4 shadow-card-shadow">
               <img
                 src="/svg/brand05.svg"
                 alt="brand"
                 className="m-auto sm:w-[80%]"
               />
             </div>
-            <div className="h-[160px] grid px-4">
+            <div className="h-[160px] grid px-4 shadow-card-shadow">
               <img
                 src="/svg/brand06.svg"
                 alt="brand"
@@ -191,7 +191,7 @@ function App() {
           <h2 className="sm:text-4xl text-2xl font-bold text-center leading-tight text-[#0A1951]">
             Ferry Routes in Andaman
           </h2>
-          <p className="text-[#8890B1] sm:px-8 px-4 mt-8 text-center">
+          <p className="text-[#8890B1] sm:text-[15px] text-[13px] sm:px-8 px-4 sm:mt-8 mt-4 text-center">
             The Andaman & Nicobar Islands comprise a union territory of India,
             boasting approximately 572 islands, of which 38 are inhabited. The
             predominant language spoken is Andaman Creole Hindi*, and
@@ -202,7 +202,7 @@ function App() {
 
           <div className="grid sm:grid-cols-2 gap-8 justify-between items-center sm:px-8 px-4 mt-12">
             <div>
-              <h3 className="text-[#0A1951] font-semibold mb-6">
+              <h3 className="text-[#0A1951] font-semibold mb-6 sm:px-0 px-4">
                 Average Ferries on routes on daily basis
               </h3>
               <div className="grid sm:grid-cols-2 gap-8">

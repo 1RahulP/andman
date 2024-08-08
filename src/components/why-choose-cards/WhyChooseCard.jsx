@@ -6,7 +6,7 @@ const WhyChooseCards = () =>{
         <div className="grid sm:grid-cols-3 gap-8">  
             {whyChoose?.map((item,index)=>{
                 return(
-                    <div key={index} className=" max-w-[450px] w-full p-12 shadow-custom-shadow2 cursor-pointer rounded-2xl">
+                    <div key={index} className="border max-w-[450px] w-full p-12 shadow-custom-shadow2 cursor-pointer rounded-2xl">
                     <img src={item?.imageUrl} alt="icon" className="w-[80px] mb-6 m-auto"/>
                     <p className={`max-w-[280px] m-auto text-center ${index===0 ? "text-[#0A1951]" : "text-[#8890B1]"}`}>{item?.content}</p>
                 </div>
