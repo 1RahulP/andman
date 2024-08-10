@@ -103,7 +103,7 @@ function App() {
           <h2 className="sm:text-4xl text-2xl font-bold text-center text-[#0A1951]">
             Popular Destinations
           </h2>
-          <div className="sm:grid flex overflow-x-auto sm:overflow-x-unset grid-cols-3 sm:gap-12 gap-4 sm:my-12 my-4 sm:pb-0 pb-8">
+          <div className="sm:grid flex overflow-x-auto sm:overflow-x-unset grid-cols-3 sm:gap-12 gap-4 sm:my-12 my-4 px-6 sm:pb-16 pb-12">
             {popularArray?.map((item, index) => {
               return (
                 <PopularCards
@@ -118,7 +118,7 @@ function App() {
           </div>
         </div>
         {/* popular destination section end */}
-        <div className="my-20 px-8">
+        <div className="sm:my-20 my-8 px-8">
           <h2 className="sm:text-4xl text-2xl font-bold text-center leading-tight text-[#0A1951]">
             Get All Your High-Speed Ferry <br />
             Needs Covered at Our Andaman Hub
