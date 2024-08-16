@@ -14,7 +14,7 @@ function App() {
       <div className="sm:px-8 sm:py-8">
         <div className="bg-[url('/public/png/banner.png')] bg-contain relative sm:h-auto h-[600px] bg-cover">
           <img
-            src="/png/bannerbg.png"
+            src="/png/banner.png"
             alt="banner"
             className="w-full sm:h-auto h-full opacity-40"
           />
