@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./layout/Header.jsx";
+import Footer from "./layout/Footer.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ root.render(
     <div className="relative">
     <Header />
     <RouterProvider router={router} />
+    <Footer />
     </div>
   </React.StrictMode>
 );

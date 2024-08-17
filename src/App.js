@@ -42,7 +42,7 @@ function App() {
             </div>
             {/* upper tab section end */}
             {/* lower details section start */}
-            <div className="max-w-[880px] m-auto w-full grid sm:grid-cols-4 sm:gap-0 gap-3 bg-white py-10 px-6 rounded-[30px] shadow-button-shadow bg-opacity-90">
+            <div className="max-w-[880px] m-auto w-full grid sm:grid-cols-4 sm:gap-0 gap-3 bg-[#f5f5f5] py-10 px-6 rounded-[30px] shadow-button-shadow">
               <div className="sm:border-r-2 sm:py-6 py-2 ">
                 <SelectDropdown
                   parentClassName="grid gap-6"
@@ -84,7 +84,7 @@ function App() {
                   Passangers
                 </label>
                 <input
-                  className="outline-none sm:bg-transparent bg-white sm:px-0 sm:py-0 px-2 py-4 rounded-xl"
+                  className="outline-none sm:bg-transparent bg-white sm:px-0 sm:py-0 px-2 py-4 rounded-xl w-full"
                   type="number"
                   name="passangers"
                   id="passangers"

@@ -1,6 +1,6 @@
 import React from "react";
 const Header = () => {
-  const [showMenu, setShowMenu] = React.useState();
+  const [showMenu, setShowMenu] = React.useState(false);
   return (
     <div className="flex justify-between sm:px-16 px-4 py-4 shadow-sm relative sticky top-0 z-[9] bg-white">
       <div>
@@ -13,15 +13,23 @@ const Header = () => {
           <li className="cursor-pointer">The Andamans Wiki</li>
         </ul>
         <div className="sm:hidden block">
+          {showMenu===false ?
           <img
             src="/svg/menu.svg"
             alt="menu"
             className="w-[32px]"
-            onClick={() => setShowMenu(!showMenu)}
+            onClick={() => setShowMenu(true)}
           />
+            :
+            <img
+            src="/svg/close-white.svg"
+            onClick={() => setShowMenu(false)}
+            className="text-white z-[999] relative w-[22px]"
+            />
+        }
           {showMenu && (
-            <div className="backdrop-blur-xl z-[99] absolute right-0 w-full h-screen">
-              <div className="w-full h-screen border fixed right-0 z-[9] p-2 grid items-center justify-center bg-black text-white bg-opacity-70">
+            <div className="backdrop-blur-xl z-[99] absolute right-0 w-full h-[102vh] top-0">
+              <div className="w-full h-[102vh] border fixed right-0 z-[9] p-2 grid items-center justify-center bg-black text-white bg-opacity-70">
                 <div className="grid gap-[50px] text-xl font-semibold">
                   <div className="mb-2 cursor-pointer text-center">About</div>
                   <div className="mb-2 cursor-pointer text-center">Shop</div>
