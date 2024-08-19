@@ -10,7 +10,7 @@ import logo from "./logo.svg";
 
 function App() {
   return (
-    <div className="max-w-[1450px] m-auto">
+    <div className="max-w-[1450px] m-auto relative top-[60px]">
       <div className="sm:px-8 sm:py-8">
         <div className=" bg-contain relative ">
           <div className="overflow-hidden bg-gradient-to-r from-black to-[#5d6063] sm:rounded-[30px] h-[600px]">
