@@ -260,7 +260,7 @@ function App() {
         </div>
         {/* upcoming ferry trips section end */}
         {/* faq section */}
-        <div className="my-12 sm:px-0 px-4">
+        <div className="mt-12 mb-24 sm:px-0 px-4">
           <h2 className="sm:text-4xl text-2xl font-bold text-center leading-tight text-[#0A1951]">Frequently Asked Questions</h2>
           <div className="mt-8">
             <Faq />
