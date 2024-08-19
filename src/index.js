@@ -17,7 +17,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div className="relative">
+    <div className="relative overflow-hidden">
     <Header />
     <RouterProvider router={router} />
     <Footer />
