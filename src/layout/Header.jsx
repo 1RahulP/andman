@@ -2,7 +2,7 @@ import React from "react";
 const Header = () => {
   const [showMenu, setShowMenu] = React.useState(false);
   return (
-    <div className="flex justify-between sm:px-16 px-4 py-4 shadow-sm relative sticky top-0 z-[9] bg-white">
+    <div className="flex justify-between sm:px-16 px-4 py-4 shadow-sm fixed w-full top-0 z-[9] bg-white">
       <div>
         <span className="text-xl font-semibold">Andaman.In</span>
       </div>
