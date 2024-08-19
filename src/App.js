@@ -250,7 +250,7 @@ function App() {
         {/* ferry routes end */}
 
         {/* upcoming ferry trips section start */}
-        <div>
+        <div className="px-2">
           <h2 className="sm:text-4xl text-2xl font-bold text-center leading-tight text-[#0A1951]">
             Our Upcoming Ferry Trips
           </h2>
