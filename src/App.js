@@ -12,12 +12,14 @@ function App() {
   return (
     <div className="max-w-[1450px] m-auto">
       <div className="sm:px-8 sm:py-8">
-        <div className="bg-[url('/public/png/banner.png')] bg-contain relative sm:h-auto h-[600px] bg-cover">
+        <div className=" bg-contain relative ">
+          <div className="overflow-hidden bg-gradient-to-r from-black to-[#5d6063] sm:rounded-[30px] h-[600px]">
           <img
-            src="/png/banner.png"
+            src="/jpg/banner.jpg"
             alt="banner"
-            className="w-full sm:h-auto h-full opacity-40"
+            className="w-full h-full opacity-80 sm:rounded-[30px]"
           />
+          </div>
           <div className="absolute sm:top-12 top-0 w-full sm:px-0 sm:py-0 px-4">
             <h2 className="xl:text-7xl sm:block hidden text-4xl font-semibold text-white leading-tight ml-12">
               Enjoy Your Dream Vacations <br /> with TheAndamans.in
@@ -42,7 +44,7 @@ function App() {
             </div>
             {/* upper tab section end */}
             {/* lower details section start */}
-            <div className="max-w-[880px] m-auto w-full grid sm:grid-cols-4 sm:gap-0 gap-3 bg-[#f5f5f5] py-10 px-6 rounded-[30px] shadow-button-shadow">
+            <div className="max-w-[880px] calender m-auto w-full grid sm:grid-cols-4 sm:gap-0 gap-3 bg-[#f5f5f5] py-10 px-6 rounded-[30px] shadow-button-shadow">
               <div className="sm:border-r-2 sm:py-6 py-2 ">
                 <SelectDropdown
                   parentClassName="grid gap-6"
@@ -70,7 +72,7 @@ function App() {
                 </label>
                 <input
                 placeholder="Departure"
-                  className="outline-none sm:bg-transparent bg-white sm:px-0 sm:py-0 px-2 py-4 rounded-xl w-full"
+                  className="outline-none sm:bg-transparent bg-white sm:px-0 sm:py-0 px-2 py-4 rounded-xl calender w-full"
                   type="date"
                   name="Departure"
                   id="departure"
