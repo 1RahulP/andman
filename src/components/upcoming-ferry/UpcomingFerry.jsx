@@ -14,7 +14,7 @@ const UpcomingFerry = () =>{
                 {nouticaSchedule?.map((item,index)=>{
                     return(
 
-                        <div key={index} className="grid sm:grid-cols-[90%_10%] grid-cols-[80%_20%] gap-4 w-full items-center border-b-2 border-[#dde0ee] mb-4">
+                        <div key={index} className="grid sm:grid-cols-[90%_10%] grid-cols-[80%_20%] sm:gap-4 w-full items-center border-b-2 border-[#dde0ee] mb-4">
                             <div className="flex justify-between items-center border-r-2 border-[#dde0ee] pr-4 mb-4">
                                 <div className="text-center sm:pr-6 sm:text-[15px] text-[10px]">
                                     <p className="text-[#0A1951]">{item?.departureTime}</p>
@@ -35,7 +35,7 @@ const UpcomingFerry = () =>{
                                 <span className="text-[#8890B1]">Arrival</span>
                                 </div>
                             </div>
-                            <div className="mb-4 sm:text-[15px] text-[10px]">
+                            <div className="mb-4 sm:text-[15px] text-[10px] ml-[3px]">
                                 <p className="text-[#0A1951]">{item?.bookingDate}</p>
                                 <span className="text-[#8890B1]">Booking Date</span>
                             </div>
