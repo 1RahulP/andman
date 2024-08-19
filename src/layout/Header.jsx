@@ -29,7 +29,7 @@ const Header = () => {
         }
         
             <div className={`backdrop-blur-xl z-[99] absolute right-0 h-[102vh] top-0 ${showMenu===false ? "right-[-100px] w-[0px] duration-500": "w-full px-2 duration-500"}`}>
-              <div className="w-full h-[102vh] border fixed right-0 z-[9]  grid items-center justify-center bg-black text-white bg-opacity-70">
+              <div className="w-full h-[102vh] fixed right-0 z-[9]  grid items-center justify-center bg-black text-white bg-opacity-70">
                 <div className="grid gap-[50px] text-xl font-semibold">
                   <div className="mb-2 cursor-pointer text-center">About</div>
                   <div className="mb-2 cursor-pointer text-center">Shop</div>
