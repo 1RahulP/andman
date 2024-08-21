@@ -5,8 +5,9 @@ import PopularCards from "./components/popular-cards/PopularCards";
 import ThemeButton from "./components/theme-button/ThemeButton";
 import UpcomingFerry from "./components/upcoming-ferry/UpcomingFerry";
 import WhyChooseCards from "./components/why-choose-cards/WhyChooseCard";
+
 import logo from "./logo.svg";
-// import "./App.css";
+import "./App.css";
 
 function App() {
   return (

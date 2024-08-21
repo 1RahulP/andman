@@ -6,12 +6,17 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./layout/Header.jsx";
 import Footer from "./layout/Footer.jsx";
+import ScubaDriving from "./pages/ScubaDriving.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
+  {
+    path:"scuba-driving",
+    element: <ScubaDriving />
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
