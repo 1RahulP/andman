@@ -8,7 +8,7 @@ const Testimonials = () => {
         {testimonialsArray?.map((item, index) => {
           return (
             <div
-              className={`flex items-center gap-6 cursor-pointer h-fit px-6 py-8 ${testimonial===item?.id ? "shadow-custom-shadow2 rounded-2xl" : ""}`}
+              className={`flex items-center gap-6 cursor-pointer h-fit px-6 py-8 ${testimonial===item?.id ? "shadow-custom-shadow2 rounded-2xl border" : ""}`}
               onClick={() => setTestimonials(index + 1)}
               key={index}
             >
