@@ -12,3 +12,6 @@
 .text-secondary{
   color: var(--var-gray-300);
 }
+.contact input[type="number"]::-webkit-inner-spin-button{
+  appearance: none;
+}

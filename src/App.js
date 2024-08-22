@@ -21,7 +21,7 @@ function App() {
             className="w-full h-full opacity-80 sm:rounded-[30px]"
           />
           </div>
-          <div className="absolute sm:top-12 top-0 w-full sm:px-0 sm:py-0 px-4">
+          <div className="absolute sm:top-12 top-0 w-full sm:py-0 px-4">
             <h2 className="xl:text-7xl sm:block hidden text-4xl font-semibold text-white leading-tight ml-12">
               Enjoy Your Dream Vacations <br /> with TheAndamans.in
             </h2>
@@ -29,7 +29,7 @@ function App() {
               Book Ferry trips, Scuba Diving, One Day Trips <br /> and much more
             </p>
             {/* upper tab section */}
-            <div className="max-w-[650px] m-auto w-full grid grid-cols-3 text-center xl:mt-36 mt-12 sm:px-0 px-[25px]">
+            <div className="max-w-[650px] m-auto w-full grid grid-cols-3 text-center md:mt-28 mt-12 px-[25px]">
               <div className="bg-white py-2 rounded-tl-3xl cursor-pointer bg-opacity-90">
                 <img src="/svg/ship.svg" alt="icon" className="m-auto sm:mb-2 sm:w-auto w-[24px]" />
                 <span className="font-semibold sm:text-[15px] text-xs">Ferry Booking</span>
@@ -45,7 +45,9 @@ function App() {
             </div>
             {/* upper tab section end */}
             {/* lower details section start */}
-            <div className="max-w-[880px] calender m-auto w-full grid sm:grid-cols-4 sm:gap-0 gap-3 bg-[#f5f5f5] py-10 px-6 rounded-[30px] shadow-button-shadow">
+            <div className="max-w-[880px] calender m-auto w-full  bg-[#f5f5f5] py-10 px-6 rounded-[30px] shadow-button-shadow">
+            <div className=" grid sm:grid-cols-4 sm:gap-0 gap-3">
+              
               <div className="sm:border-r-2 sm:py-6 py-2 ">
                 <SelectDropdown
                   parentClassName="grid gap-6"
@@ -94,10 +96,11 @@ function App() {
                   value={"2"}
                 />
               </div>
-              <div className="sm:hidden block">
-                <ThemeButton text="Search" className="w-full" />
-              </div>
             </div>
+              <div className="m-auto sm:w-[20%] mt-4 sm:absolute bottom-[-25px] left-0 right-0">
+                <ThemeButton text="Search" className="w-full " />
+              </div>
+              </div>
             {/* lower details section end */}
           </div>
         </div>
