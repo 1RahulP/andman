@@ -2,7 +2,7 @@ import React from "react";
 const Testimonials = () => {
   const [testimonial, setTestimonials] = React.useState(1);
   return (
-    <div className="grid grid-cols-[1fr_1.5fr] gap-12 mt-12">
+    <div className="grid sm:grid-cols-[1fr_1.5fr] gap-12 mt-12">
       {/* left part of the testimonials start */}
       <div>
         {testimonialsArray?.map((item, index) => {

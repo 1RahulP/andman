@@ -141,11 +141,11 @@ const ScubaDriving = () => {
       {/* why become end */}
 
       {/* hand singnal section start */}
-      <section className="max-w-[1250px] m-auto w-full my-16">
-        <h2 className="text-primary text-4xl px-4 text-center font-bold mb-12">
+      <section className="max-w-[1250px] m-auto w-full sm:my-16 my-8">
+        <h2 className="text-primary sm:text-4xl text-2xl px-4 text-center font-bold mb-12">
           Hand Signals in Scuba Diving
         </h2>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-3 gap-8">
           {handSignal?.map((item, index) => {
             return (
               <div key={index} className="max-w-[300px] mx-auto">
@@ -166,10 +166,10 @@ const ScubaDriving = () => {
       {/* hand singnal section end */}
       {/* faq section start */}
       <section className="my-16 max-w-[1250px] m-auto px-4">
-        <h3 className="text-primary text-4xl font-bold mb-16 text-center">
+        <h3 className="text-primary sm:text-4xl text-2xl font-bold sm:mb-16 mb-8 text-center">
           Frequently Asked Questions
         </h3>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 gap-8">
           <div>
             <Faq />
           </div>
@@ -207,9 +207,9 @@ const ScubaDriving = () => {
 
       {/* contact section start */}
       <section className="max-w-[1250px] w-full mx-auto w-full px-4">
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 sm:gap-8 gap-2">
           <div>
-            <h3 className="text-primary sm:text-4xl text-2xl font-bold">
+            <h3 className="text-primary sm:text-4xl text-2xl font-bold sm:text-left text-center">
               Contact Us
             </h3>
             <div className="text-secondary my-8">
@@ -245,7 +245,7 @@ const ScubaDriving = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-primary sm:text-4xl text-2xl font-bold">
+            <h3 className="text-primary sm:text-4xl text-2xl font-bold sm:text-left text-center">
               For any queries
             </h3>
             <div className="my-8 grid gap-4 contact">
@@ -257,6 +257,56 @@ const ScubaDriving = () => {
         </div>
       </section>
       {/* contact section end */}
+      {/* get all start */}
+          <section className="max-w-[1250px] m-auto px-4 sm:my-16 my-8">
+            <h2 className="sm:text-4xl text-2xl text-primary font-bold text-center">Get All Your High-Speed Ferry <br />
+            Needs Covered at Our Andaman Hub</h2>
+            <div className="sm:flex sm:justify-between sm:items-center grid gap-4 my-12">
+            <div className="shadow-card-shadow h-[160px] sm:w-[300px] grid px-4">
+              <img
+                src="/svg/brand01.svg"
+                alt="brand"
+                className="m-auto sm:w-[80%]"
+              />
+            </div>
+            <div className="h-[160px] sm:w-[300px] grid px-4 shadow-card-shadow">
+              <img
+                src="/svg/brand02.svg"
+                alt="brand"
+                className="m-auto sm:w-[80%]"
+              />
+            </div>
+            <div className="h-[160px] sm:w-[300px] grid px-4 shadow-card-shadow">
+              <img
+                src="/svg/brand03.svg"
+                alt="brand"
+                className="m-auto sm:w-[80%]"
+              />
+            </div>
+            <div className="h-[160px] sm:w-[300px] grid px-4 shadow-card-shadow">
+              <img
+                src="/svg/brand04.svg"
+                alt="brand"
+                className="m-auto sm:w-[50%]"
+              />
+            </div>
+            <div className="h-[160px] sm:w-[300px] grid px-4 shadow-card-shadow">
+              <img
+                src="/svg/brand05.svg"
+                alt="brand"
+                className="m-auto sm:w-[50%]"
+              />
+            </div>
+            <div className="h-[160px] sm:w-[300px] grid px-4 shadow-card-shadow">
+              <img
+                src="/svg/brand06.svg"
+                alt="brand"
+                className="m-auto sm:w-[80%]"
+              />
+            </div>
+          </div>
+          </section>
+      {/* get all end */}
     </div>
   );
 };
