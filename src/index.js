@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./layout/Header.jsx";
 import Footer from "./layout/Footer.jsx";
 import ScubaDriving from "./pages/ScubaDriving.jsx";
+import BookTrip from "./pages/BookTrip.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path:"scuba-driving",
     element: <ScubaDriving />
+  },
+  {
+    path:"book-trip",
+    element: <BookTrip />
   }
 ]);
 
