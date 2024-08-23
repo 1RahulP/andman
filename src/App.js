@@ -109,7 +109,7 @@ function App() {
           <h2 className="sm:text-4xl text-2xl font-bold text-center text-[#0A1951]">
             Popular Destinations
           </h2>
-          <div className="sm:grid flex overflow-x-auto sm:overflow-x-unset grid-cols-3 sm:gap-12 gap-4 sm:my-12 my-4 sm:pb-16 pb-12">
+          <div className="sm:grid flex overflow-x-auto sm:overflow-x-unset grid-cols-3 sm:gap-12 gap-4 sm:my-12 my-4 pb-8">
             {popularArray?.map((item, index) => {
               return (
                 <PopularCards
