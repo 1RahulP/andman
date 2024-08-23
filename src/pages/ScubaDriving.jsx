@@ -30,7 +30,7 @@ const ScubaDriving = () => {
       </section>
       {/* tabs section end */}
       {/* packages section start */}
-      <section className="px-4 max-w-[1250px] m-auto sm:my-12 my-6">
+      <section className="max-w-[1250px] m-auto sm:my-12 my-6">
         <h2 className="text-primary sm:text-4xl text-2xl text-center font-bold mb-8">
           Popular Packages
         </h2>
