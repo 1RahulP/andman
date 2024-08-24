@@ -5,7 +5,7 @@ const PopularHotels = () =>{
             <div className="grid sm:grid-cols-3 gap-8 mt-8">
                 {hotelsArray?.map((item,index)=>{
                     return(
-                        <div key={index} className="shadow-custom-shadow2 rounded-2xl overflow-hidden">
+                        <div key={index} className="shadow-custom-shadow2 rounded-2xl overflow-hidden cursor-pointer">
                             <div>
                                 <img src={item?.imageUrl} alt="hotel" className="h-[250px] w-full object-cover" />
                             </div>
